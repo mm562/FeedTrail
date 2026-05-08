@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <!-- Explanation Text -->
+
+        <!-- Explanation Text -->
+
+
+        <TextView
+            android:id="@+id/permissions_explanation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="0dp"
+
+            android:layout_marginEnd="8dp"
+            android:lineSpacingExtra="6dp"
+            android:textColor="#000000"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/permissions_header"
+            android:layout_below="@id/permissions_explanation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="8dp"
+
+            android:layout_marginEnd="8dp"
+            android:text="Permission Requierments"
+            android:textColor="#FF0000"
+            android:textSize="20sp"
+            android:fontFamily="@font/roboto_bold" />
+
+        <TextView
+            android:id="@+id/tostartstudy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/permissions_header"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="-2dp"
+            android:layout_marginEnd="8dp"
+            android:padding="16dp"
+            android:text="To start the study, you need to:"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tostartstudy"
+                android:id="@+id/grant"
+                android:padding="6dp"
+                android:text="• Grant all the following permissions. Each button will turn gray once the permission is granted."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_below="@id/grant"
+                android:id="@+id/revoked"
+                android:padding="6dp"
+                android:layout_height="wrap_content"
+                android:text="• If any permissions are revoked, you will be notified and required to grant them again to continue the study."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_marginTop="8dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="8dp"/>
+
+
+
+
+
+        <Button
+            android:id="@+id/usagepermission"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/revoked"
+            android:layout_marginTop="15dp"
+            android:text="Usage Permission"
+            android:textSize="16dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="399dp" />
+        <Button
+            android:id="@+id/notifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usagepermission"
+            android:layout_marginTop="0dp"
+            android:text="Notifications Permission"
+            android:textSize="16dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="399dp" />
+        <Button
+            android:id="@+id/access_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifications"
+            android:layout_marginTop="0dp"
+            android:text="Accessibility Permission"
+            android:textSize="16dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="139dp"
+            tools:layout_editor_absoluteY="399dp" />
+
+        <Button
+            android:id="@+id/camera_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/access_button"
+            android:layout_marginTop="0dp"
+            android:text="Camera Permission"
+            android:textSize="16dp"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="152dp"
+            tools:layout_editor_absoluteY="636dp" />
+
+        <Button
+            android:id="@+id/startButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/camera_button"
+            android:layout_marginTop="0dp"
+            android:textSize="16dp"
+            android:text="Capture Permissions" />
+
+        <Button
+            android:id="@+id/storage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startButton"
+            android:layout_marginTop="0dp"
+            android:textSize="16dp"
+
+            android:text="Storage Permission" />
+
+        <Button
+            android:id="@+id/stopButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stop Recording"
+            android:visibility="gone"
+            tools:visibility="gone" />
+
+        <Button
+            android:id="@+id/location"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/storage"
+            android:layout_marginTop="0dp"
+            android:text="Location Permission"
+            android:visibility="visible"
+            tools:visibility="visible"
+            android:textSize="16dp"
+
+            />
+        <TextView
+            android:id="@+id/notification_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Grant all permissions to start the study"
+            android:textColor="#FF0000"
+            android:textSize="16sp"
+            android:layout_below="@id/location"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/robotolightitaalic"
+
+            />
+
+        <Button
+            android:id="@+id/start_study_button"
+            android:layout_width="282dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notification_text"
+
+            android:layout_marginLeft="55dp"
+            android:layout_marginTop="4dp"
+
+
+            android:background="#FF0000"
+            android:enabled="false"
+            android:text="Go to Study"
+            android:textColor="#FFFFFF"
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+
+    </RelativeLayout>
+    </ScrollView>
+
+
+
+    </RelativeLayout>

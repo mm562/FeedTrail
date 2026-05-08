@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "896189134944",
+    "project_id": "feedtrail-29fed",
+    "storage_bucket": "feedtraileur"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896189134944:android:486538406c1462801c2b05",
+        "android_client_info": {
+          "package_name": "com.example.cameraswitch"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9nqmuMw88CbC_YNfSKmhQexcd733VYFA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

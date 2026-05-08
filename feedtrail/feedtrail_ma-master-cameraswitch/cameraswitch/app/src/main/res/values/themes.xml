@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.FeedTrail" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="31">false</item>
+        <item name="android:windowBackground">#FFFFFF</item>
+        <item name="backgroundColor">#FFFFFF</item>
+        <item name="colorSurface">#FFFFFF</item>
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#FF0000</item>
+
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">#FF0000</item>
+
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <!-- Customize your theme here. -->
+        <item name="actionBarStyle">@style/MyCustomActionBar</item>
+
+    </style>
+    <style name="MyCustomActionBar" parent="Widget.AppCompat.ActionBar.Solid">
+        <item name="background">@color/white</item> <!-- Custom color for ActionBar -->
+        <item name="titleTextStyle">@style/MyCustomActionBarTitleText</item>
+    </style>
+    <style name="MyCustomActionBarTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item> <!-- Custom color for ActionBar title text -->
+    </style>
+</resources>

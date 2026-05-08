@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+    <!-- Image Above PID Input -->
+    <ImageView
+        android:id="@+id/pid_image"
+        android:layout_width="254dp"
+        android:layout_height="263dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/pidsearch" />
+
+    <!-- PID Entry Label -->
+    <TextView
+        android:id="@+id/pid_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your prolific ID"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_below="@id/pid_image"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Instruction Text -->
+    <TextView
+        android:id="@+id/instruction_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter your prolific ID here in order to be able to identify you and give you a compensation at the end of the study!"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_below="@id/pid_label"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- PID Input Field -->
+    <EditText
+        android:id="@+id/pid_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="prolificID here"
+        android:inputType="text"
+        android:padding="16dp"
+        android:background="#DADADA"
+
+    android:layout_below="@id/instruction_text"
+    android:layout_marginTop="16dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"/>
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:enabled="false"
+        android:text="Submit"
+        android:fontFamily="@font/roboto_bold"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"/>
+</RelativeLayout>

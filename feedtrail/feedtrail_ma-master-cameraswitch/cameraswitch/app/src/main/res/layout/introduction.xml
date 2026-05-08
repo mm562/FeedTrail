@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollviewintro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/agree_button"
+        tools:ignore="NotSibling">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Larger Image at the Top -->
+            <ImageView
+                android:id="@+id/introduction_image"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:src="@drawable/intro"
+            android:layout_centerHorizontal="true"/>
+
+            <!-- Introduction Text Section -->
+            <TextView
+                android:id="@+id/introduction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="215dp"
+                android:layout_below="@id/introduction_image"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_regular"
+                android:lineSpacingExtra="5dp"
+                android:text="Thank you for joining us on this journey to better understand social media habits. This application is part of a study designed to analyze how social media usage is influenced by your surroundings and daily activities. By participating, you’re contributing valuable insights that will help us make meaningful advancements in understanding social media and digital habits."
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+            <!-- Motivation Section -->
+            <TextView
+                android:id="@+id/motivation_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Why We Need Your Help"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/introduction_text"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:id="@+id/motivation_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Have you ever wondered how your surroundings influence the time you spend on social media? Our study aims to uncover these patterns. Your participation will provide us with unique data to paint a clearer picture of how people use social media in their everyday lives. We value your time and commitment, and the data you share with us will strictly be used for research purposes, handled with the utmost care and confidentiality."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_below="@id/motivation_title"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="5dp"
+                />
+
+            <!-- Who Section -->
+            <TextView
+                android:id="@+id/who"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Who Should Participate?"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/motivation_text"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:id="@+id/who_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="This study is specifically designed for individuals who actively use social media. If you rarely engage with platforms like Instagram, Facebook, TikTok or Youtube, this may not be the right fit for you. For avid users, this study is an opportunity to contribute to meaningful insights."
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_below="@id/who"
+                android:layout_marginTop="8dp"
+                android:lineSpacingExtra="5dp"/>
+            <!-- What-Req. Section -->
+            <TextView
+                android:id="@+id/what"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="What You Need to Know"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/who_text"
+                android:layout_marginTop="24dp"
+                android:lineSpacingExtra="5dp"/>
+
+
+
+            <TextView
+                android:id="@+id/what_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/what"
+                android:layout_marginTop="23dp"
+                android:text="\u2022 Study Length: \nThis study will run for 7 days. You will be notified when the study ends. App will automatically stop collecting your data.\n\n \u2022 Requirements\nAndroid Version: Your device must run at least Android 11 or upto Android 13 to participate.\n Mandatory Data Collection: To participate, the app will collect Pictures, Screenshots, and Location Data only during the usage of the social media apps(Instagram, Facebook, TikTok and Youtube). This data is essential for the study. Please ensure you’re comfortable sharing them before proceeding. Every time your data is being collected you will receive a Notification. \n\n\u2022 Compensation\nAt the end of the study, we will notify you that you have reached the end of the study and no data will be collected from thereon further.\n For every complete session you will get 50 pence as compensation"
+                android:lineSpacingExtra="5dp"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+
+            <!-- Anonymity Section -->
+            <TextView
+                android:id="@+id/anonymity_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" Transparency and Anonymity"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/what_text"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:id="@+id/anonymity_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We understand the sensitivity of the information you’re sharing. It will never be shared with third parties or used for purposes beyond this study. Your trust is our priority. The data is handled by the server and not the creater/developer directly"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_below="@id/anonymity_title"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp"
+                android:lineSpacingExtra="5dp"
+                />
+            <TextView
+                android:id="@+id/ready_to_begin_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ready to Begin?"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/anonymity_text"
+                android:layout_marginTop="0dp" />
+
+            <TextView
+                android:id="@+id/ready_to_begin_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you agree to these terms and meet the requirements, tap the “I Agree and Understand” button below to get started. Thank you for being a part of this important research!"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_below="@id/ready_to_begin_title"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="100dp"
+                android:lineSpacingExtra="5dp"/>
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/agree_button"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="I Agree and Understand"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:enabled="false"
+        />
+
+</RelativeLayout>

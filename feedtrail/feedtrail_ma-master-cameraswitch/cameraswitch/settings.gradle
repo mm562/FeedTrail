@@ -1,0 +1,32 @@
+pluginManagement {
+    repositories {
+        google()
+        mavenCentral()
+        gradlePluginPortal()
+        maven { url "https://jitpack.io" }
+    }
+}
+dependencyResolutionManagement {
+
+    /*repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        maven { url "https://jitpack.io" }
+    }*/
+
+
+    repositoriesMode.set(RepositoriesMode.PREFER_SETTINGS)
+    repositories {
+        google()
+        mavenCentral()  // If you already use Maven Central
+        maven { url "https://jitpack.io" }
+        maven { url 'https://dl.bintray.com/rvalerio/maven' }
+
+    }
+}
+rootProject.name = "FeedTrail"
+include ':app', ':ANR-WatchDog-master'
+project(':ANR-WatchDog-master').projectDir = new File(rootProject.projectDir, 'libs/ANR-WatchDog-master')
+//project(':ANR-WatchDog-master').projectDir = new File('libs/ANR-WatchDog-master')
+include ':mylibrary'

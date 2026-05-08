@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">FeedTrail</string>
+    <string name="accessibility_service_description">Access</string>
+        <string name="app_logo">App Logo</string>
+        <string name="welcome_message">Welcome to Our Study!</string>
+        <string name="thank_you_message">Thank you for participating. Your involvement is invaluable and will help us gain meaningful insights.</string>
+        <string name="instruction_message">Please read the following information carefully and follow the instructions to ensure your experience is smooth and valuable.</string>
+        <string name="continue_button">Continue</string>
+
+
+
+</resources>

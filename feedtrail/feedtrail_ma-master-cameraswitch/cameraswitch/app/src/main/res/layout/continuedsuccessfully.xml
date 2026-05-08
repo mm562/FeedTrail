@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:padding="16dp">
+
+    <!-- App Logo/Text -->
+    <TextView
+        android:id="@+id/app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="lemondrop"
+        android:textColor="#FF0000"
+        android:textSize="24sp"
+        android:fontFamily="sans-serif-medium"
+        android:layout_marginTop="24dp"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        />
+
+    <!-- Welcome Text -->
+
+    <!-- Page Indicator -->
+
+    <TextView
+        android:id="@+id/welcome_text"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo"
+        android:layout_marginTop="53dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="Thank you!"
+        android:textColor="#D86A6A"
+        android:textSize="33sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/con_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/app_logo"
+        android:layout_marginTop="123dp"
+        android:fontFamily="@font/roboto_regular"
+        android:gravity="center"
+        android:text="The app will close on its own now!"
+        android:textColor="#D86A6A"
+        android:textSize="33sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/lemon_image"
+        android:layout_width="395dp"
+        android:layout_height="293dp"
+        android:layout_below="@id/welcome_text"
+        android:layout_marginTop="102dp"
+        android:src="@drawable/manwaving" />
+
+
+    <!-- Skip Button -->
+
+    <!-- Get Started Button -->
+
+
+</RelativeLayout>

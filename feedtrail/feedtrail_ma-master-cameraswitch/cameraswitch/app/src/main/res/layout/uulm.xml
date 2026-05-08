@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    >
+
+    <ScrollView
+        android:id="@+id/scrollulm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/accept"
+        tools:ignore="NotSibling">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="16dp">
+
+            <!-- Larger Image at the Top -->
+            <ImageView
+                android:id="@+id/introduction_image"
+                android:layout_width="263dp"
+                android:layout_height="107dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/uulm" />
+
+            <!-- Introduction Text Section -->
+            <TextView
+                android:id="@+id/introduction_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Privacy Policy for the Collection of Personal Data for Academic and Industrial Research Purposes"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_below="@id/introduction_image"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_bold"
+                />
+
+         <!--   <TextView
+                android:id="@+id/longText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/introduction_text"
+                android:autoLink="all"
+                android:textColor="#000000"
+                android:text="@string/privacy_policy"
+                android:textIsSelectable="true"
+                android:textSize="16sp"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+
+                /> -->
+
+            <!-- Motivation Section -->
+         <TextView
+                android:id="@+id/motivation_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1. Name and Contact Details of the Person Responsible for the Data Processing is:"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/introduction_text"
+                android:layout_marginTop="24dp"/>
+
+            <TextView
+                android:id="@+id/motivation_text"
+                android:layout_width="wrap_content"
+                android:layout_height="168dp"
+                android:layout_below="@id/motivation_title"
+                android:layout_marginTop="8dp"
+                android:text="Maryam Elhaidary\n maryam.elhaidary@uni-ulm.de\n Universität Ulm\n
+Faculty of Engineering, Computer Science and Psychology\n
+Institute for Media Informatics\n
+James-Franck-Ring\n89081 Ulm, Germany\n\n"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+                       <TextView
+                           android:id="@+id/study_length_title"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="2. Purposes and Legal Bases of the Processing:"
+                           android:textColor="#FF0000"
+                           android:textStyle="bold"
+                           android:textSize="18sp"
+                           android:layout_below="@id/motivation_text"
+                           android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:id="@+id/study_length_text"
+                android:layout_width="wrap_content"
+                android:layout_height="235dp"
+                android:layout_below="@id/study_length_title"
+
+                android:layout_marginTop="8dp"
+                android:text="2.(a) The Purpose of Processing Your Data Will Be:\n
+~ to work on scientific questions regarding interventions for infinite scrolling\n
+~ to write scientific publications based on the findings of the processing of the data.\n
+2.(b) Legal Basis of Processing\n
+Your data on the basis of Section 4 of the Federal Data Protection Act (Landesdatenschutzgesetz, LDSG) in connection with point e of Article 6 (1) of the GDPR and points b and c of Article 6 (1) of the GDPR.\n\n"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+                       <TextView
+                           android:id="@+id/data_collection_title"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="3. Recipients or Categories of Recipients of Personal Data:\n"
+                           android:textColor="#FF0000"
+                           android:textStyle="bold"
+                           android:textSize="18sp"
+                           android:layout_below="@id/study_length_text"
+                           android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:id="@+id/data_collection_text"
+                android:layout_width="wrap_content"
+                android:layout_height="92dp"
+                android:layout_below="@id/data_collection_title"
+                android:layout_marginTop="8dp"
+                android:text="Your data responses (including gender, age, and nationality) will be processed for research and development purposes by the Ulm University. No further identification will be required.\n\n"
+                android:textColor="#000000"
+                android:textSize="16sp" />
+
+
+                       <TextView
+                           android:id="@+id/anonymity_title"
+                           android:layout_width="match_parent"
+                           android:layout_height="wrap_content"
+                           android:text="4. Rights of Persons Affected:"
+                           android:textColor="#FF0000"
+                           android:textStyle="bold"
+                           android:textSize="18sp"
+                           android:layout_below="@id/data_collection_text"
+                           android:layout_marginTop="14dp"/>
+
+            <TextView
+                android:id="@+id/anonymity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="315dp"
+                android:layout_below="@id/anonymity_title"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="10dp"
+                android:text="According to the General Data Protection Regulation, you have the following rights when providing personal data:\n
+~ the purpose of this data collection shall be made clear to you\n
+~ the identity of the researcher and their contact details are made clear\n
+~ the period for which this personal data will be stored (until about December 2028)\n
+~ the right to access, correct, or erase any personal data or to object to the processing of your data.\n
+Furthermore, find out more about your data protection rights at the provisions under the https://gdpr-info.eu/ General Data Protection Regulation (GDPR).\n\n"
+                android:textColor="#000000"
+                android:textSize="16sp"
+
+                />
+
+            <TextView
+                android:id="@+id/consent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Consent Form"
+                android:textColor="#FF0000"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:layout_below="@id/anonymity_text"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:id="@+id/consenttext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="I am aware that the collection, processing and use of my data is voluntary.\n
+I have been informed that my following data are processed: my age, nationality, and gender as well as my personal information regarding lifestyle as it pertains to traffic environments, such as crossing a road.\n
+My data will be needed to answer scientific research questions regarding scrolling behavior and contect on social media. I am aware that my data is processed anonymously.\n
+I agree that my data will be collected, processed, used and stored by Universität Ulm for the following purposes:\n
+~ I agree that the results and primary data of this study may be published by the Universität Ulm as a scientific publication. The data is published completely anonymously, i.e. the collected data cannot be related to respective participants.\n
+~ The study described here is part of a scientific project of the Universität Ulm. The data is stored for an indefinite period of time. (until about December 2028)\n
+I have been informed that my personal data collected in the context of the above purposes will be processed in compliance with the General Data Protection Regulation (GDPR).\n
+Furthermore, I am aware that according to the General Data Protection Regulation (GDPR) Art. 7 point 3, I have the right to withdraw my consent at any time. Withdrawing my consent is made easy for me: by simply contacting the researcher in charge I can withdraw my consent to this study.\n\n"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:layout_below="@id/consent"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="0dp"
+                />
+
+
+    <TextView
+        android:id="@+id/contactperson"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Contact Person"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_below="@id/consenttext"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/contacttext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Maryam Elhaidary\n maryam.elhaidary@uni-ulm.de"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:layout_below="@id/contactperson"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="10dp"
+        />
+            <TextView
+                android:id="@+id/cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" The survey can be canceled by me at any time without mentioning reasons and without causing me any disadvantages. In the event of cancellation, all data recorded of me will be irrevocably deleted"
+                android:textColor="#000000"
+                android:textSize="16sp"
+                android:layout_below="@id/contacttext"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:fontFamily="@font/roboto_bold"
+                />
+        </RelativeLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/accept"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_width="match_parent"
+        android:layout_height="90dp"
+        android:text="I Agree"
+        android:textColor="#FFFFFF"
+        android:background="#FF0000"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:enabled="false"
+        />
+
+</RelativeLayout>
